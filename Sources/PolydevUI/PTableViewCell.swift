@@ -6,7 +6,7 @@ open class PTableViewCell: UITableViewCell, PViewSizesProtocol {
         return String(describing: self)
     }
 
-    public class var height: CGFloat {
+    open class var height: CGFloat {
         return 0
     }
 
@@ -20,7 +20,7 @@ open class PTableViewCell: UITableViewCell, PViewSizesProtocol {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         //object configuration:
     }
 

@@ -6,7 +6,7 @@ open class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
         return String(describing: self)
     }
     
-    public class var size: CGSize {
+    open class var size: CGSize {
         return CGSize(width: 0, height: 0)
     }
 
@@ -20,7 +20,7 @@ open class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         //object configuration:
     }
     

@@ -12,7 +12,7 @@ open class PUIControl: UIControl, PViewSizesProtocol {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         //object configuration:
     }
 }

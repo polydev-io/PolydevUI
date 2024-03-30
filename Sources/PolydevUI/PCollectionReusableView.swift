@@ -13,7 +13,7 @@ open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol
         return CGSize(width: 0, height: height)
     }
     
-    public class var height: CGFloat {
+    open class var height: CGFloat {
         return 0
     }
     
@@ -27,7 +27,7 @@ open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         //object configuration:
     }
     

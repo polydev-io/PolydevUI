@@ -12,7 +12,7 @@ open class PButton: UIButton, PViewSizesProtocol {
         setup()
     }
 
-    public func setup() {
+    open func setup() {
         //object configuration:
     }
 }
