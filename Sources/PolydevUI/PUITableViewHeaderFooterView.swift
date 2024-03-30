@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
+public class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
 
     public static var id: String {
         return String(describing: self)

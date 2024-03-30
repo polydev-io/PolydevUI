@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PButton: UIButton, PViewSizesProtocol {
+public class PButton: UIButton, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PUIControl: UIControl, PViewSizesProtocol {
+public class PUIControl: UIControl, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)

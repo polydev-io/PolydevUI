@@ -1,7 +1,7 @@
 import UIKit
 
 
-public final class PView: UIView, PViewSizesProtocol {
+public class PView: UIView, PViewSizesProtocol {
     
     public var isScalable = false
 

@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
+public class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
     
     public static var id: String {
         return String(describing: self)

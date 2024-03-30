@@ -1,6 +1,6 @@
 import Foundation
 import UIKit
 
-public final class PViewController: UIViewController, PViewSizesProtocol {
+public class PViewController: UIViewController, PViewSizesProtocol {
     
 }

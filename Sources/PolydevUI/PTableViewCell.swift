@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PTableViewCell: UITableViewCell, PViewSizesProtocol {
+public class PTableViewCell: UITableViewCell, PViewSizesProtocol {
 
     public static var id: String {
         return String(describing: self)

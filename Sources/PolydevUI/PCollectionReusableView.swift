@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol  {
+public class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol  {
     public static var id: String {
         return String(describing: self)
     }

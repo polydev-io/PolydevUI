@@ -1,6 +1,6 @@
 import UIKit
 
-public final class PUITextField: UITextField, PViewSizesProtocol {
+public class PUITextField: UITextField, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
