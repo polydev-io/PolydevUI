@@ -1,6 +1,6 @@
 import UIKit
 
-class PButton: UIButton, PViewSizesProtocol {
+public final class PButton: UIButton, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -12,7 +12,7 @@ class PButton: UIButton, PViewSizesProtocol {
         setup()
     }
 
-    func setup() {
+    private func setup() {
         //object configuration:
     }
 }

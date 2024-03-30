@@ -1,6 +1,6 @@
 import UIKit
 
-class PUIControl: UIControl, PViewSizesProtocol {
+public final class PUIControl: UIControl, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -12,7 +12,7 @@ class PUIControl: UIControl, PViewSizesProtocol {
         setup()
     }
 
-    func setup() {
+    private func setup() {
         //object configuration:
     }
 }

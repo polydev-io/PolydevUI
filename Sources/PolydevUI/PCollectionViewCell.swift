@@ -1,34 +1,34 @@
 import UIKit
 
-class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
+public final class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
     
-    static var id: String {
+    public static var id: String {
         return String(describing: self)
     }
     
-    class var size: CGSize {
+    public class var size: CGSize {
         return CGSize(width: 0, height: 0)
     }
 
-    override init(frame: CGRect) {
+    private override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder: NSCoder) {
+    internal required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
 
-    func setup() {
+    private func setup() {
         //object configuration:
     }
     
-    static func register(_ collectionView: UICollectionView) {
+    public static func register(_ collectionView: UICollectionView) {
         collectionView.register(Self.self, forCellWithReuseIdentifier: Self.id)
     }
     
-    static func getCell(_ collectionView: UICollectionView, for indexPath: IndexPath) -> Self {
+    public static func getCell(_ collectionView: UICollectionView, for indexPath: IndexPath) -> Self {
         return collectionView.dequeueReusableCell(withReuseIdentifier: Self.id, for: indexPath) as! Self
     }
 }

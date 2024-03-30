@@ -1,6 +1,6 @@
 import UIKit
 
-final class Sizes {
+public final class Sizes {
     
     lazy var p360: CGFloat = PView.makeSizeStatic(eightLow: 360, tenUp: 360)
     lazy var p180: CGFloat = PView.makeSizeStatic(eightLow: 180, tenUp: 180)
@@ -62,13 +62,13 @@ final class Sizes {
     private init() {}
 }
 
-extension CGFloat {
+public extension CGFloat {
     var inverse: CGFloat {
         return self * -1
     }
 }
 
-protocol PViewSizesProtocol {
+public protocol PViewSizesProtocol {
     var sizes: Sizes { get }
     static var scale: CGFloat { get }
     static var daScreenWidth: CGFloat { get }
@@ -79,7 +79,7 @@ protocol PViewSizesProtocol {
 }
 
 
-extension PViewSizesProtocol {
+public extension PViewSizesProtocol {
     
     var sizes: Sizes {
         return Sizes.shared

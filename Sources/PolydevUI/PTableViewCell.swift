@@ -1,34 +1,34 @@
 import UIKit
 
-class PTableViewCell: UITableViewCell, PViewSizesProtocol {
+public final class PTableViewCell: UITableViewCell, PViewSizesProtocol {
 
-    static var id: String {
+    public static var id: String {
         return String(describing: self)
     }
 
-    class var height: CGFloat {
+    public class var height: CGFloat {
         return 0
     }
 
-    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+    private override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         setup()
     }
 
-    required init?(coder: NSCoder) {
+    internal required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
 
-    func setup() {
+    private func setup() {
         //object configuration:
     }
 
-    static func register(_ tableView: UITableView) {
+    public static func register(_ tableView: UITableView) {
         tableView.register(Self.self, forCellReuseIdentifier: Self.id)
     }
 
-    static func getCell(_ tableView: UITableView, for indexPath: IndexPath) -> Self {
+    public static func getCell(_ tableView: UITableView, for indexPath: IndexPath) -> Self {
         return tableView.dequeueReusableCell(withIdentifier: Self.id, for: indexPath) as! Self
     }
 }

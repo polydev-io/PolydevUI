@@ -1,6 +1,6 @@
 import UIKit
 
-class PUITextField: UITextField, PViewSizesProtocol {
+public final class PUITextField: UITextField, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -12,7 +12,7 @@ class PUITextField: UITextField, PViewSizesProtocol {
         setup()
     }
 
-    func setup() {
+    private func setup() {
         //object configuration:
     }
 }
