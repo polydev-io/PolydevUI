@@ -15,7 +15,7 @@ open class PView: UIView, PViewSizesProtocol {
         setup()
     }
     
-    private func setup() {
+    public func setup() {
         //object configuration:
         
     }

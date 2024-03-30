@@ -27,7 +27,7 @@ open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol
         setup()
     }
 
-    private func setup() {
+    public func setup() {
         //object configuration:
     }
     

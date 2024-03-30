@@ -12,7 +12,7 @@ open class PUITextField: UITextField, PViewSizesProtocol {
         setup()
     }
 
-    private func setup() {
+    public func setup() {
         //object configuration:
     }
 }
