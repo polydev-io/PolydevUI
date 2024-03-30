@@ -10,7 +10,7 @@ open class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
         return CGSize(width: 0, height: 0)
     }
 
-    private override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }

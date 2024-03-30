@@ -15,7 +15,7 @@ open class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
         setup()
     }
 
-    private override init(reuseIdentifier: String?) {
+    public override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
         setup()
     }

@@ -2,7 +2,7 @@ import UIKit
 
 open class PUITextField: UITextField, PViewSizesProtocol {
 
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }

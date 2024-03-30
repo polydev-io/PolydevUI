@@ -5,7 +5,7 @@ open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol
         return String(describing: self)
     }
 
-    public class var elementKind: String {
+    open class var elementKind: String {
         return UICollectionView.elementKindSectionHeader
     }
     
@@ -17,7 +17,7 @@ open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol
         return 0
     }
     
-    private override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
