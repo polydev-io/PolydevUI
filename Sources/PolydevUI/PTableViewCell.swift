@@ -1,6 +1,6 @@
 import UIKit
 
-public class PTableViewCell: UITableViewCell, PViewSizesProtocol {
+open class PTableViewCell: UITableViewCell, PViewSizesProtocol {
 
     public static var id: String {
         return String(describing: self)
@@ -15,7 +15,7 @@ public class PTableViewCell: UITableViewCell, PViewSizesProtocol {
         setup()
     }
 
-    internal required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }

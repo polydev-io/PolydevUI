@@ -1,13 +1,13 @@
 import UIKit
 
-public class PButton: UIButton, PViewSizesProtocol {
+open class PButton: UIButton, PViewSizesProtocol {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
 
-    required init?(coder: NSCoder) {
+    required public init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }

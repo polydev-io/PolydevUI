@@ -1,6 +1,6 @@
 import UIKit
 
-public class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
+open class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
     
     public static var id: String {
         return String(describing: self)
@@ -15,7 +15,7 @@ public class PCollectionViewCell: UICollectionViewCell, PViewSizesProtocol {
         setup()
     }
 
-    internal required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }

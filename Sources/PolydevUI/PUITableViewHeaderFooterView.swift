@@ -1,6 +1,6 @@
 import UIKit
 
-public class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
+open class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
 
     public static var id: String {
         return String(describing: self)
@@ -10,7 +10,7 @@ public class PTableViewHeaderFooterView: UITableViewHeaderFooterView {
         return 0
     }
 
-    internal required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }

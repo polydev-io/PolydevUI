@@ -1,6 +1,6 @@
 import UIKit
 
-public class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol  {
+open class PCollectionReusableView: UICollectionReusableView, PViewSizesProtocol  {
     public static var id: String {
         return String(describing: self)
     }
@@ -22,7 +22,7 @@ public class PCollectionReusableView: UICollectionReusableView, PViewSizesProtoc
         setup()
     }
 
-    internal required init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         setup()
     }
