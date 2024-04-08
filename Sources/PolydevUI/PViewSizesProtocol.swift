@@ -33,6 +33,7 @@ public final class Sizes {
     public lazy var p22: CGFloat = PView.makeSizeStatic(eightLow: 22, tenUp: 22)
     public lazy var p20: CGFloat = PView.makeSizeStatic(eightLow: 20, tenUp: 20)
     public lazy var p18: CGFloat = PView.makeSizeStatic(eightLow: 18, tenUp: 18)
+    public lazy var p17: CGFloat = PView.makeSizeStatic(eightLow: 17, tenUp: 17)
     public lazy var p16: CGFloat = PView.makeSizeStatic(eightLow: 16, tenUp: 16)
     public lazy var p14: CGFloat = PView.makeSizeStatic(eightLow: 14, tenUp: 14)
     public lazy var p12: CGFloat = PView.makeSizeStatic(eightLow: 12, tenUp: 12)
@@ -42,6 +43,10 @@ public final class Sizes {
     public lazy var p4: CGFloat = PView.makeSizeStatic(eightLow: 4, tenUp: 4)
     public lazy var p2: CGFloat = PView.makeSizeStatic(eightLow: 2, tenUp: 2)
     public lazy var p1: CGFloat = PView.makeSizeStatic(eightLow: 1, tenUp: 1)
+    
+    public func custom(_ value: CGFloat) -> CGFloat {
+        return PView.makeSizeStatic(eightLow: Double(value), tenUp: Double(value))
+    }
     
     
     public lazy var screenSize: CGSize = UIScreen.main.bounds.size
